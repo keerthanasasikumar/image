@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #191919;
+}
+
+.about-p{
+    flex-basis: 60%;
+}
+
+.container{
+    color: aliceblue;
+    display: flex;
+    justify-content: space-evenly;
+    width: 900px;
+}
+
+.container p{
+    font-size: larger;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.container p:hover{
+    cursor: pointer;
+    background-color: grey;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.tab-content img{
+    list-style: none;
+}
+
+.tab-content{
+    display: none;
+}
+
+.tab-content.active-tab{
+    display: block;
+}
+
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    padding: 10px;
+    flex: none;
+}
+
+.gallery div img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(100);
+    transition: transform 0.5s;
+}
+
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% auto;
+}
+
+#backtn,#nexttn{
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+      }
+    
+      /* Adjust the gallery width */
+      .gallery {
+        width: 100%;
+      }
+      .gallery div img {
+        width: 100px;
+        height: 100px;
+      }
+    
+      /* Adjust the margin and padding for smaller screens */
+      .container p {
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+      .gallery-wrap {
+        margin: 5% auto;
+      }
+    
+      /* Adjust the button sizes */
+      #backtn, #nexttn {
+        width: 20px;
+        margin: 10px;
+      }
+    
+      /* Adjust the tab content alignment */
+      .tab-content {
+        margin-top: 20px;
+      }
+      .gallery div {
+        text-align: center;
+      }
+    
+      /* Adjust the image spacing */
+      .gallery div span {
+        margin: 5px;
+      }
+}

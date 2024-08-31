@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="about-p">
+        <div class="container">
+            <p class="cont-link active-link" onclick="opentab('allphotos')">All Photos</p>
+            <p class="cont-link" onclick="opentab('girls')">Snap</p>
+            <p class="cont-link" onclick="opentab('boys')">Camera</p>
+            <p class="cont-link" onclick="opentab('anime')">WhatsApp Images</p>
+            <p class="cont-link" onclick="opentab('others')">Others</p>
+        </div>
+
+        <div id="allphotos"class="tab-content active-tab">
+            <div class="gallery-wrap">
+                <img src="images/back.png" id="backtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/download.jpg"></span>
+                        <span><img src="images/image-2.png"></span>
+                        <span><img src="images/image-6.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="images/image-4.png"></span>
+                        <span><img src="images/image-5.png"></span>
+                        <span><img src="images/image-3.png"></span>
+                    </div>
+                    <div>
+                        <span><img src="images/image-7.jpeg"></span>
+                        <span><img src="images/image-8.jpeg"></span>
+                        <span><img src="images/image-9.jpeg"></span>
+                    </div>
+                </div>
+                <img src="images/next.png" id="nexttn">
+            </div>
+        </div>
+
+        <div id="girls"class="tab-content">
+            <div class="gallery-wrap">
+                <img src="images/back.png" id="backtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/download.jpg"></span>
+                        <span><img src="images/image-2.png"></span>
+                        <span><img src="images/image-6.png"></span>
+                    </div>
+                </div>
+                <img src="images/next.png" id="nexttn">
+            </div>
+        </div>
+
+
+        <div id="boys"class="tab-content">
+            <div class="gallery-wrap">
+                <img src="images/back.png" id="backtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/image-4.png"></span>
+                        <span><img src="images/image-5.png"></span>
+                        <span><img src="images/image-3.png"></span>
+                    </div>
+                </div>
+                <img src="images/next.png" id="nexttn">
+            </div>
+        </div>
+
+        <div id="anime"class="tab-content">
+            <div class="gallery-wrap">
+                <img src="images/back.png" id="backtn">
+                <div class="gallery">
+                    <div>
+                        <span><img src="images/image-7.jpeg"></span>
+                        <span><img src="images/image-8.jpeg"></span>
+                        <span><img src="images/image-9.jpeg"></span>
+                    </div>
+                </div>
+                <img src="images/next.png" id="nexttn">
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
